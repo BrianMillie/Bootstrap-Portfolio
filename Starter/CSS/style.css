@@ -4,7 +4,12 @@
 }
 
 h1, h2, h4{
-    color:#ffc107;
+    color:#f7f7ff;
+    padding: left 30px;
+}
+
+.h5a{
+    color:#f7f7ff;
     padding: left 30px;
 }
 .Dan, col{
@@ -58,10 +63,17 @@ margin: 0;
     justify-content: right;
 }
 
+/*Hover effects for multiple buttons*/
 .btn:hover{
     transition: box-shadow .3s;
     transform: translateY(-5px);
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link:hover{
+    transition: box-shadow .3s;
+    transform: translateY(5px);
+    box-shadow: 0px 10px 20px 2px rgb(255, 255, 255);
 }
 
 .gm:hover{
@@ -92,6 +104,8 @@ margin: 0;
 
 .gmail
 {
+    display: flex;
+    justify-content: space-around;
     padding: 0;
 }
 .In {
@@ -132,6 +146,7 @@ margin: 0;
       cursor: pointer;
     }
   
+/* Enable multiple colour button*/
   .gm{
   color: black;
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
@@ -155,55 +170,20 @@ margin: 0;
     padding-bottom: 5%;
   }
 
-@media screen and (max-width:576px) {
-
-.Bootstrap{
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-}
-.Stylist{
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-}
-
-.Custom{
-        display: flex;
-        justify-content: center;
-        font-size: medium;
-    }
-
-.ES6{
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-}
-.Wizard{
-    display: flex;
-    justify-content: center;
-    font-size:medium;
-}
-}
-
-@media screen and (max-width:767px) {
-
-.centered {
-    font-size: 250%;
-}
-}
-
-@media screen and (max-width:400px) {
-
-.centered {
-    font-size: 150%;
-}
-
-}
-
-@media screen and (max-width:1666px) {
+/* Most of these media queries are to address a larger image for Application 4 calculator*/
+@media screen and (max-width:3000px) {
 .starone{
-    height: 16.8%;
+    height: 20.8%;
+}
+.staroneimg{
+    height: 79.2%;
+}
+
+}
+
+@media screen and (max-width:1200px) {
+.starone{
+    height: 26.8%;
 }
 .staroneimg{
     height: 73.2%;
@@ -223,17 +203,56 @@ margin: 0;
 
 @media screen and (max-width:767px) {
 .starone{
-    height: 41.8%;
+    height: 42.8%;
 }
 .staroneimg{
-    height: 58.2%;
+    height: 57.2%;
+}
+.centered {
+    font-size: 250%;
+}
 }
 
-}
+@media screen and (max-width:576px) {
+
+    .Bootstrap{
+        display: flex;
+        justify-content: center;
+        font-size: medium;
+    }
+    .Stylist{
+        display: flex;
+        justify-content: center;
+        font-size: medium;
+    }
+    
+    .Custom{
+            display: flex;
+            justify-content: center;
+            font-size: medium;
+        }
+    
+    .ES6{
+        display: flex;
+        justify-content: center;
+        font-size: medium;
+    }
+    .Wizard{
+        display: flex;
+        justify-content: center;
+        font-size:medium;
+    }
+    .starone{
+        height: 43.8%;
+    }
+    .staroneimg{
+        height: 56.2%;
+    }
+    }
 
 @media screen and (max-width:460px) {
 .starone{
-    height: 21.8%;
+height: 21.8%;
 }
 .staroneimg{
  height: 78.2%;
@@ -241,12 +260,10 @@ margin: 0;
     
 }
 
-@media screen and (max-width:459px) {
-    .starone{
-        height: 43.8%;
+@media screen and (max-width:400px) {
+
+    .centered {
+        font-size: 150%;
     }
-    .staroneimg{
-     height: 56.2%;
-    }
-        
+    
     }
